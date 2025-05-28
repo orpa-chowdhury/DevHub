@@ -1,0 +1,101 @@
+/* Container layout */
+.profile-edit-container {
+    display: flex;
+    gap: 2rem; /* space between sidebar and main content */
+    margin-top: 2rem;
+}
+
+/* Sidebar styling */
+.profile-sidebar {
+    width: 250px;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+/* Avatar image */
+.avatar-lg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navigation links */
+.profile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.profile-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.profile-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.profile-nav li.active a {
+    color: #007bff;
+}
+
+/* Main content */
+.profile-content {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+/* Form elements spacing */
+#profile-edit-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+#profile-edit-form input[type="text"],
+#profile-edit-form input[type="email"],
+#profile-edit-form input[type="url"],
+#profile-edit-form input[type="password"],
+#profile-edit-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Alert messages */
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
